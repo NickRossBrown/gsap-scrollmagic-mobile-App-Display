@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(40, 39, 39);
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (min-width: 500px) {
+    .general-title {
+        font-size: 40px;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        color: #ffe5db;
+    }
+    .iphone-text {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 20px;
+        margin: 0 0 8px 0;
+    }
+    .project-title {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 50px;
+        margin: 10px 0 200px 10px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-150px);
+    }
+}
+
+@media (max-width: 500px) {
+    .general-title {
+        font-size: 20px;
+        font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        color: #ffe5db;
+    }
+    .iphone-text {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 12.5px;
+        margin: 0 0 8px 0;
+    }
+    .project-title {
+        color: #FFF;
+        font-weight: 600;
+        font-size: 30px;
+        margin: 10px 0 200px 10px;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-200px);
+    }
+}
+
+.grid-12 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+.position-h2 {
+    grid-row: 7;
+    grid-column: 5 / span 4;
+    align-self: center;
+}
+
+.iphone-image-wrapper {
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-auto-columns: 2fr 1fr 2fr;
+    grid-template-rows: repeat(1, 1fr);
+    align-items: center;
+}
+
+.iphone-image {
+    grid-row: 1;
+    grid-column: 2 / span 1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.inner-phone {
+    position: relative;
+}
+
+.iphone1-text {
+    grid-column: 1;
+    text-align: right;
+}
+
+.iphone2-text {
+    grid-column: 3;
+}
+
+.iphone1-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.iphone-stick {
+    display: none;
+    position: absolute;
+    left: 54.5%;
+}
+
+.iphone2-img {
+    position: absolute;
+    z-index: 2;
+}
+
+.iphone1 img {
+    width: 100%;
+}
+
+.iphone2 img {
+    width: 88%;
+}
+
+.iphone1-img-behind {
+    z-index: 1;
+    position: relative;
+}
+
+.iphone2-img-behind {
+    z-index: 1;
+    position: relative;
+}
